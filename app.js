@@ -3,7 +3,7 @@ const submitButton = document.getElementById('submit-button');
 const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
 // fortune paragraph
-// reset button
+const resetButton = document.getElementById('reset-button');
 
 /* Events */
 // event listener for submit button that targets fortuneP
@@ -13,6 +13,10 @@ submitButton.addEventListener('click', () => {
     fortuneSection.classList.toggle('hide');
 });
 
+resetButton.addEventListener('click', () => {
+    promptSection.classList.toggle('hide');
+    fortuneSection.classList.toggle('hide');
+});
 /* Display Functions */
 // function that randomly generates fortune output
 // function(s) that toggle appropriate hidden objects
