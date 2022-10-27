@@ -37,3 +37,7 @@ main {
 .hide {
     display: none;
 }
+
+img {
+    height: 200px;
+}
