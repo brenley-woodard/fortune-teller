@@ -1,18 +1,17 @@
 /* Get DOM Elements */
-// submit button
 const submitButton = document.getElementById('submit-button');
 const promptSection = document.getElementById('prompt');
-// prompt section
-// fortune section
-// fortune output
+const fortuneSection = document.getElementById('fortune');
+// fortune paragraph
 // reset button
 
 /* Events */
 // event listener for submit button that targets fortuneP
-submitButton.addEventListener('click', () => {
-    console.log('I am being clicked');
-});
 // event listener for reset button that clears image and answer
+submitButton.addEventListener('click', () => {
+    promptSection.classList.toggle('hide');
+    fortuneSection.classList.toggle('hide');
+});
 
 /* Display Functions */
 // function that randomly generates fortune output
