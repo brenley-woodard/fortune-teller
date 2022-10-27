@@ -32,4 +32,17 @@ header .logo {
 
 main {
     padding: 20px;
+    background-image: url('/classroom.png');
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    height: 200px;
+}
+
+p {
+    color: white;
 }
