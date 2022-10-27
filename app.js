@@ -43,7 +43,3 @@ resetButton.addEventListener('click', () => {
     promptSection.classList.toggle('hide');
     fortuneSection.classList.toggle('hide');
 });
-
-/* Display Functions */
-// function that randomly generates fortune output
-// function(s) that toggle appropriate hidden objects
