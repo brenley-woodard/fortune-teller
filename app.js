@@ -2,7 +2,7 @@
 const submitButton = document.getElementById('submit-button');
 const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
-// fortune paragraph
+const fortuneP = document.getElementById('answer');
 const resetButton = document.getElementById('reset-button');
 
 const answers = [
@@ -35,8 +35,8 @@ submitButton.addEventListener('click', () => {
     // of the array minus 1
     const randNum = Math.floor(Math.random() * answers.length);
     const randChoice = answers[randNum];
-    console.log(randChoice);
     // set the text content to the random choice
+    fortuneP.textContent = randChoice;
 });
 
 resetButton.addEventListener('click', () => {
